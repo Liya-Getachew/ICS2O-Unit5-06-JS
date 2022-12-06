@@ -7,7 +7,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-Unit5-06-JS/sw.js", {
@@ -16,8 +16,19 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function calculates the user's multiplication question using repeated addition. 
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  const value1 = parseInt(document.getElementById("value1").value)
+  const value2 = parseInt(document.getElementById("value2").value)
+  let counter = 0
+  let sum = 0
+
+
+  while (counter < value2) {
+    sum += value1
+    counter++
+  }
+
+  document.getElementById("sum").innerHTML = value1 + " x " + value2 + " = " + sum;
 }

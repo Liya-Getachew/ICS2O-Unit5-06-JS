@@ -1,5 +1,5 @@
 /* Created by: liya getachew
-* Created on: Oct 2022
+* Created on: Dec 2022
 * This file contains the CSS for index.html
 */
 
@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: #f2cfcf;
 }
 
 p {
@@ -36,4 +36,9 @@ p {
 img {
   float: right;
   margin-right: 15px;
+}
+
+#sum {
+  padding-top: 15px;
+  font-size: 120%;
 }
