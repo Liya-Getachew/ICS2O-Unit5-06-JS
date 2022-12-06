@@ -16,7 +16,7 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function calculates the user's multiplication question using repeated addition. 
+ * This function calculates the user's multiplication question using repeated addition.
  */
 function myButtonClicked() {
   const value1 = parseInt(document.getElementById("value1").value)
@@ -24,11 +24,11 @@ function myButtonClicked() {
   let counter = 0
   let sum = 0
 
-
   while (counter < value2) {
     sum += value1
     counter++
   }
 
-  document.getElementById("sum").innerHTML = value1 + " x " + value2 + " = " + sum;
+  document.getElementById("sum").innerHTML =
+    value1 + " x " + value2 + " = " + sum
 }
